@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-stone-800;
+    }
+
+    a {
+        @apply transition-colors duration-150;
+    }
+}
+
+@layer components {
+    .page-container {
+        @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+    }
+
+    .surface-card {
+        @apply bg-white border border-warm-200/60 rounded-xl shadow-card;
+    }
+
+    .page-title {
+        @apply text-2xl sm:text-3xl font-semibold text-stone-800 tracking-tight;
+    }
+
+    .section-title {
+        @apply text-lg font-semibold text-stone-800;
+    }
+
+    .text-muted {
+        @apply text-stone-500;
+    }
+
+    .filter-pill {
+        @apply text-sm px-4 py-1.5 rounded-full border transition-colors duration-150;
+    }
+
+    .filter-pill-active {
+        @apply bg-accent text-white border-accent;
+    }
+
+    .filter-pill-inactive {
+        @apply bg-white text-stone-600 border-warm-200 hover:border-warm-300 hover:text-stone-800;
+    }
+}
